@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+         <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+        <ul class="navlinks">
+            <li><img src="logo.png" alt=""></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="buy.html">Buy Websites</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="#" class="navicon1">Join Us</a></li>
+        </ul>
+
+        <div class="hamburger-menu" onclick="toggleMenu()">
+    <p style="font-size: 24px; cursor: pointer;">&#9776;</p>
+    </div>
+
+        <div class="navicon">
+            <a href="#">Join us</a>
+        </div>
+    </nav>
+    
+    <section class="web">
+        <div class="web-row">
+            <div class="webox">
+                <img src="website.jpg" alt="">
+                <div class="ox">
+                    <div class="ox2">
+                        <h1>Landing Page</h1>
+                        <p>$1,000</p>
+                    </div>
+                    <div class="ox3">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+             <div class="webox">
+                <img src="website.jpg" alt="">
+                <div class="ox">
+                    <div class="ox2">
+                        <h1>Landing Page</h1>
+                        <p>$1,000</p>
+                    </div>
+                    <div class="ox3">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+             <div class="webox">
+                <img src="website.jpg" alt="">
+                <div class="ox">
+                    <div class="ox2">
+                        <h1>Landing Page</h1>
+                        <p>$1,000</p>
+                    </div>
+                    <div class="ox3">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+             <div class="webox">
+                <img src="website.jpg" alt="">
+                <div class="ox">
+                    <div class="ox2">
+                        <h1>Landing Page</h1>
+                        <p>$1,000</p>
+                    </div>
+                    <div class="ox3">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="web-row">
+            <div class="webox">
+                <img src="website.jpg" alt="">
+                <div class="ox">
+                    <div class="ox2">
+                        <h1>Landing Page</h1>
+                        <p>$1,000</p>
+                    </div>
+                    <div class="ox3">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+             <div class="webox">
+                <img src="website.jpg" alt="">
+                <div class="ox">
+                    <div class="ox2">
+                        <h1>Landing Page</h1>
+                        <p>$1,000</p>
+                    </div>
+                    <div class="ox3">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+             <div class="webox">
+                <img src="website.jpg" alt="">
+                <div class="ox">
+                    <div class="ox2">
+                        <h1>Landing Page</h1>
+                        <p>$1,000</p>
+                    </div>
+                    <div class="ox3">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+             <div class="webox">
+                <img src="website.jpg" alt="">
+                <div class="ox">
+                    <div class="ox2">
+                        <h1>Landing Page</h1>
+                        <p>$1,000</p>
+                    </div>
+                    <div class="ox3">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <ul class="footlink">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Buy Website</a></li>
+            <li><a href="#">Courses</a></li>
+        </ul>
+        <p>&copy; GraceChild Inc 2025</p>
+    </footer>
+    
+    <!-- Customer Info Modal -->
+    <div id="customerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Enter Your Details</h2>
+            <form id="customerForm">
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Payment Details Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Payment Details</h2>
+            <div class="account-details">
+                <p><strong>Account Number:</strong> 7025693976</p>
+                <p><strong>Bank:</strong> Opay</p>
+                <p><strong>Account Name:</strong> Njok Chukwunenye Samuel</p>
+                <p><strong>Amount:</strong> $1,000</p>
+            </div>
+            <p>Please make the transfer to the account above and click the button below when done.</p>
+            <button id="transferBtn" class="transfer-btn">I've transferred</button>
+        </div>
+    </div>
+    
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Thank You!</h2>
+            <p>The zip file would be sent to your email shortly.</p>
+        </div>
+    </div>
+    <script src="buy.js"></script>
+</body>
+</html>

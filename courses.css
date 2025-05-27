@@ -1,0 +1,255 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+}
+
+.navlinks li {
+    font-size: 25px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.navlinks li img {
+    width: 100px;
+    height: auto;
+}
+
+.navlinks li a {
+    font-weight: normal;
+    font-size: 18px;
+    padding: 0px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.navlinks li .navicon1 {
+    display: none;
+    background-color: navy;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.navicon a {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.courses {
+    margin-top: 80px;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.core-flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px;
+    padding: 10px 0px;
+    border-top: 2px solid gray;
+}
+
+.core-flow1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px;
+    padding: 10px 0px;
+}
+
+.core-flow1 img {
+    width: 340px;
+    height: auto;
+    border-radius: 10px ;
+}
+
+.core-flow img {
+    width: 340px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.core-go h1 {
+    font-size: 30px;
+}
+
+.core-go p {
+    color: gray;
+}
+
+.core-go {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: rgb(19, 18, 18);
+    color: white;
+    padding: 30px 60px;
+    text-align: center;
+}
+
+.footlink {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footlink li {
+    list-style: none;
+}
+
+.footlink li a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+}
+
+
+@media (max-width: 768px) {
+    
+    .navbar {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .logo img {
+        width: 70px;
+        height: auto;
+    }
+
+    .navlinks {
+        position: absolute;
+        display: none;
+        right: 0;
+        top: 60px;
+        background-color: white;
+        width: 200px;
+        box-shadow: 1px 1px 2px #888;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        padding-right: 20px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navicon1 a {
+        display: block;
+    }
+
+    .navlinks img {
+        display: none;
+    }
+
+    .navlinks li a {
+        padding: 20px 0px;
+    }
+
+    .navlinks li .navicon1 {
+        display: flex;
+        font-size: 20px;
+        padding: 5px 16px;
+    }
+
+    .navicon {
+        display: none;
+    }
+
+    .courses {
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .courses h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    .courses p {
+        margin-bottom: 20px;
+    }
+
+    .core-flow1 {
+        gap: 10px;
+    }
+
+    .core-flow1 img {
+        width: 250px;
+        height: auto;
+    }
+
+    .core-flow {
+        gap:  10px;
+    }
+
+    .core-flow img {
+        width: 250px;
+        height: auto;
+    }
+
+    .core-go h1 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .core-go p {
+        font-size: 13px;
+    }
+
+      .navlinks.active {
+        display: flex;
+    }
+
+    .footlink li a {
+        font-size: 13px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+}

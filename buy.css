@@ -1,0 +1,324 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+}
+
+.navlinks li {
+    font-size: 25px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.navlinks li img {
+    width: 100px;
+    height: auto;
+}
+
+.navlinks li a {
+    font-weight: normal;
+    font-size: 18px;
+    padding: 0px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.navlinks li .navicon1 {
+    display: none;
+    background-color: navy;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.navicon a {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.web {
+    margin-top: 80px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.web-row {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.webox {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.webox img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.ox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ox2 p {
+    color: gray;
+}
+
+.ox3 a {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(19, 18, 18);
+    color: white;
+    padding: 30px 60px;
+    text-align: center;
+}
+
+.footlink {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footlink li {
+    list-style: none;
+}
+
+.footlink li a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+}
+
+ /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            color: black;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        
+        .account-details {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .transfer-btn {
+            background-color: #2196F3;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .transfer-btn:hover {
+            background-color: #0b7dda;
+        }
+
+        /* Mobile Navigation Styles */
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+    
+    .navbar {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .logo img {
+        width: 70px;
+        height: auto;
+    }
+
+    .navlinks {
+        position: absolute;
+        right: 0;
+        display: none;
+        top: 60px;
+        background-color: white;
+        width: 200px;
+        box-shadow: 1px 1px 2px #888;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        padding-right: 20px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navicon1 a {
+        display: block;
+    }
+
+    .navlinks img {
+        display: none;
+    }
+
+    .navlinks li a {
+        padding: 20px 0px;
+    }
+
+    .navlinks li .navicon1 {
+        display: flex;
+        font-size: 20px;
+        padding: 5px 16px;
+    }
+
+    .navicon {
+        display: none;
+    }
+
+    .web-row {
+        overflow-x: auto;
+        padding: 10px 0px;
+        gap: 20px;
+        scrollbar-width: none;
+    }
+
+    .ox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ox2 h1 {
+        font-size: 12px;
+    }
+
+    .ox3 a {
+        font-size: 15px;
+    }
+
+    .webox img {
+        width: 200px;
+        height: auto;
+    }
+
+    .footlink li a {
+        font-size: 14px;
+    }
+    
+    .navlinks.active {
+        display: flex;
+    }
+
+}

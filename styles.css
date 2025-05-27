@@ -1,0 +1,429 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.navlinks li {
+    font-size: 25px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.navlinks li img {
+    width: 100px;
+    height: auto;
+}
+
+.navlinks li a {
+    font-weight: normal;
+    font-size: 18px;
+    padding: 0px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.navlinks li .navicon1 {
+    display: none;
+    background-color: navy;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.navicon a {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.new {
+    margin-top: 70px;
+    background: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 89vh;
+    color: white;
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.new h5 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.new h1 {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.new a {
+    text-decoration: none;
+    color: white;
+    background-color: navy;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 200px;
+    margin: 0px auto;
+}
+
+.new p {
+    margin-bottom: 40px;
+}
+
+.application {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 60px;
+    margin-top: 56px;
+}
+
+.application a {
+    background-color: rgba(225, 225, 225, 0.2);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    gap: 5px;
+}
+
+.application a img {
+    width: 50px;
+    height: 50px;
+}
+
+.text {
+    padding: 30px 300px;
+    text-align: center;
+}
+
+.text a {
+    color: black;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.core {
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.core-flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px;
+}
+
+.core-flow img {
+    width: 340px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.core-go h1 {
+    font-size: 30px;
+}
+
+.core-go p {
+    color: gray;
+}
+
+.core-go {
+    display: flex;
+    flex-direction: column;
+}
+
+.team {
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.team h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.team p {
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.member {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.member img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.member p {
+    color: gray;
+    text-align: left;
+}
+
+.course {
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.course h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.course-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-row a {
+    border: 1px solid navy;
+    color: navy;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 20px 40px;
+}
+
+footer {
+    background-color: rgb(19, 18, 18);
+    color: white;
+    padding: 30px 60px;
+    text-align: center;
+}
+
+.footlink {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footlink li {
+    list-style: none;
+}
+
+.footlink li a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        height: 100%;
+    }
+    
+    .navbar {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .logo img {
+        width: 70px;
+        height: auto;
+    }
+
+    .navlinks {
+        position: absolute;
+        display: none;
+        right: 0;
+        top: 60px;
+        background-color: white;
+        width: 200px;
+        box-shadow: 1px 1px 2px #888;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        padding-right: 20px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navicon1 a {
+        display: block;
+    }
+
+    .navlinks img {
+        display: none;
+    }
+
+    .navlinks li a {
+        padding: 20px 0px;
+    }
+
+    .navlinks li .navicon1 {
+        display: flex;
+        font-size: 20px;
+        padding: 5px 16px;
+    }
+
+    .navicon {
+        display: none;
+    }
+
+    .new {
+        margin-top: 55px;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .new h5 {
+        margin-top: 80px;
+    }
+
+    .new h1 {
+        font-size: 80px;
+    }
+
+    .application {
+        overflow-y: auto;
+        scrollbar-width: none;
+        gap: 10px;
+        margin-top: 80px;
+    }
+
+    .application a {
+        font-size: 18px;
+    }
+
+    .application a img {
+        width: 30px;
+        height: auto;
+    }
+
+      .navlinks.active {
+        display: flex;
+    }
+
+    .text {
+        padding: 20px;
+    }
+
+    .core {
+        padding: 20px;
+        gap: 0px;
+    }
+
+    .core-flow {
+        gap: 10px;
+        padding: 10px 0px;
+    }
+
+    .core-flow img {
+        width: 50%;
+        height: auto;
+    }
+
+    .coire-go h1 {
+        font-size: 20px;
+    }
+
+    .core-go p {
+        font-size: 14px;
+    }
+
+    .team {
+        padding: 20px;
+    }
+
+    .team-members{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .member img {
+        width: 100%;
+        height: auto;
+    }
+
+    .course {
+        padding: 20px;
+    }
+
+    .course h1 {
+        font-size: 30px;
+    }
+
+    .course-row a {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    .footlink li a {
+        font-size: 14px;
+    }
+}

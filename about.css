@@ -1,0 +1,281 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+}
+
+.navlinks li {
+    font-size: 25px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.navlinks li img {
+    width: 100px;
+    height: auto;
+}
+
+.navlinks li a {
+    font-weight: normal;
+    font-size: 18px;
+    padding: 0px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.navlinks li .navicon1 {
+    display: none;
+    background-color: navy;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.navicon a {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.part {
+    margin-top: 80px;
+    background: url(background.jpg) no-repeat center center/cover;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.part .part-now {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.part-now .flow {
+    background: none;
+    color: gray;
+    font-style: italic;
+}
+
+.part-now h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.part-now p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.part-now a {
+    text-decoration: none;
+    color: white;
+    background-color: navy;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.text {
+    padding: 30px 300px;
+    text-align: center;
+}
+
+.text a {
+    color: black;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.core {
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.core-flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px;
+}
+
+.core-flow img {
+    width: 340px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.core-go h1 {
+    font-size: 30px;
+}
+
+.core-go p {
+    color: gray;
+}
+
+.core-go {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: rgb(19, 18, 18);
+    color: white;
+    padding: 30px 60px;
+    text-align: center;
+}
+
+.footlink {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footlink li {
+    list-style: none;
+}
+
+.footlink li a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+}
+
+@media (max-width: 768px) {
+    
+    .navbar {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .logo img {
+        width: 70px;
+        height: auto;
+    }
+
+    .navlinks {
+        position: absolute;
+        display: none;
+        right: 0;
+        top: 60px;
+        background-color: white;
+        width: 200px;
+        box-shadow: 1px 1px 2px #888;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        padding-right: 20px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navicon1 a {
+        display: block;
+    }
+
+    .navlinks img {
+        display: none;
+    }
+
+    .navlinks li a {
+        padding: 20px 0px;
+    }
+
+    .navlinks li .navicon1 {
+        display: flex;
+        font-size: 20px;
+        padding: 5px 16px;
+    }
+
+    .navicon {
+        display: none;
+    }
+
+    .part {
+        margin-top: 50px;
+    }
+
+    .part .part-now {
+        width: 100%;
+    }
+
+    .text {
+        padding: 20px;
+    }
+
+    .core {
+        padding: 20px;
+        gap: 0px;
+    }
+
+    .core-flow {
+        gap: 50px;
+        border-top: 1px solid gray;
+        padding: 10px 0px;
+    }
+
+    .core-go h1 {
+        font-size: 20px;
+    }
+
+    .core-go p {
+        font-size: 14px;
+    }
+
+    .core-flow img {
+        width: 200px;
+        height: auto;
+    }
+
+      .navlinks.active {
+        display: flex;
+    }
+
+}
